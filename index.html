@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+      body {
+        background-color: black;
+        width: 100%;
+        margin:0;
+        overflow:hidden;
+      }
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+    </style>
+  </head>
+  <body>
+    <img src="https://16colo.rs/pack/blocktronics_acid_trip/x1/we-ACiDTrip.ANS.png" width="640">
+
+    <script>
+      (function() {
+
+        var scrollDirection = 1, pageScroll;
+        pageScroll = function() {
+          window.scrollBy(0,scrollDirection); // horizontal and vertical scroll increments
+          //               // scrolls every 100 milliseconds
+          //              if ( (window.scrollY === 0) || (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+          //                        scrollDirection = -1*scrollDirection;
+          //                        scrolldelay = setTimeout(pageScroll,200);
+          //                    }
+          //              else{
+          scrolldelay = setTimeout(pageScroll,20);
+          //newImage.src = "image.jpg?t=" + new Date().getTime();
+
+        }
+        pageScroll();
+      })();
+    </script>
+  </body>
+</html>
+
